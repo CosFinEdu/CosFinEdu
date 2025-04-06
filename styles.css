@@ -1,0 +1,175 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    overflow-y: scroll;
+}
+
+/* Background Images */
+body.home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('home-bg.jpg') no-repeat center center/cover;
+}
+
+body.courses {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('courses-bg.jpg') no-repeat center center/cover;
+}
+
+body.about {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('about-bg.jpg') no-repeat center center/cover;
+}
+
+body.contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('contact-bg.jpg') no-repeat center center/cover;
+}
+
+/* Header and Navigation */
+header nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+header nav .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    z-index: 10;
+    position: relative;
+}
+
+/* Sections */
+.hero, .why-us, .courses-section, .about-section, .contact-section, .testimonials {
+    padding: 50px 20px;
+}
+
+.hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Feature and Course Boxes */
+.feature-box, .course-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature, .course {
+    width: 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.feature img, .course img {
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.course .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Contact Form */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* Testimonials */
+.testimonials {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.testimonial {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    padding: 20px;
+}
+
+.testimonial img {
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Team Section */
+.team {
+    margin-top: 30px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 250px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
