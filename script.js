@@ -4,40 +4,21 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         e.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
-        if (targetElement) {
+        if (targetId && targetElement) {
             targetElement.scrollIntoView({ behavior: 'smooth' });
         }
     });
 });
 
-// Form Submission Alert (Improved)
+// Form Submission Alert (Without Server)
 const contactForm = document.querySelector('.contact-form');
 
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
 
-        // Get form data
-        const formData = new FormData(this);
-
-        // Send data to server (replace with your server endpoint)
-        fetch('/submit-contact-form', {
-            method: 'POST',
-            body: formData,
-        })
-        .then(response => {
-            if (response.ok) {
-                // Display success message
-                alert("Thank you! Your message has been received.");
-                contactForm.reset(); // Clear the form
-            } else {
-                // Display error message
-                alert("An error occurred. Please try again.");
-            }
-        })
-        .catch(error => {
-            console.error("Error submitting form:", error);
-            alert("An error occurred. Please try again.");
-        });
+        // Simulated form submission
+        alert("Thank you! Your message has been received.");
+        contactForm.reset(); // Clear the form
     });
 }
